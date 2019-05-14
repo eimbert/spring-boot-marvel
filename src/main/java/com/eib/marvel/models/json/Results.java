@@ -1,11 +1,14 @@
 package com.eib.marvel.models.json;
 
+import java.util.List;
+
 public class Results {
 	private Long id;
 	private String name;
 	private String description;
 	private String modified;
 	private Thumbnail thumbnail;
+	private List<Urls> urls;
 
 	public Results() {
 
@@ -13,6 +16,14 @@ public class Results {
 
 	public Long getId() {
 		return id;
+	}
+
+	public List<Urls> getUrls() {
+		return urls;
+	}
+
+	public void setUrls(List<Urls> urls) {
+		this.urls = urls;
 	}
 
 	public void setId(Long id) {

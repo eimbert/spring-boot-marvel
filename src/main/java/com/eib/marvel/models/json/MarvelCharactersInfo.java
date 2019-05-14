@@ -8,8 +8,6 @@ public class MarvelCharactersInfo {
 	private String status;
 	private String copyright;
 	private String attributionText;
-	private String attributionHTML;
-	private String etag;
 	private Data data;
 
 	public MarvelCharactersInfo() {
@@ -46,22 +44,6 @@ public class MarvelCharactersInfo {
 
 	public void setAttributionText(String attributionText) {
 		this.attributionText = attributionText;
-	}
-
-	public String getAttributionHTML() {
-		return attributionHTML;
-	}
-
-	public void setAttributionHTML(String attributionHTML) {
-		this.attributionHTML = attributionHTML;
-	}
-
-	public String getEtag() {
-		return etag;
-	}
-
-	public void setEtag(String etag) {
-		this.etag = etag;
 	}
 
 	public Data getData() {

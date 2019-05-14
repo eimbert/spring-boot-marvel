@@ -6,11 +6,17 @@
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
 	crossorigin="anonymous">
-<title>Marvel</title>
+<title></title>
+<style type="text/css">
+.contenedor3 {
+	display: flex;
+	align-items: center;
+}
+</style>
 </head>
 
 <body style="background-color:black">
-<div class="container" style="background-color:black; color:white; ">
+<div class="container" style="background-color:black; color:white">
 		<h1 th:text="${titulo}"></h1>
 		<br>
 	</div>
@@ -24,7 +30,7 @@
 							<img th:src="${b.thumbnail.path} +'.'+ ${b.thumbnail.extension}" class="card-img-top" style="height: 15rem;" />
 							<div class="card-body">
 								<h7 th:text="${b.name}" class="card-title"></h7><br><br>
-								<a th:href="${b.urls[1].url}" target="_blank" class="btn btn-primary">More
+								<a th:href="@{http://www.marvel.com}" class="btn btn-primary">More
 									Info...</a>
 							</div>
 						</div>

@@ -24,9 +24,11 @@ public class MarvelController {
 		MarvelCharactersInfo marvel = service.findMarvelCharacters();
 		
 		List<Results> results = marvel.getData().getResults();
+		
+		//String urlWiki = marvel.getData().getResults().get(1).getUrls().get(1).getUrl();
 		model.addAttribute("titulo", marvel.getAttributionText());
 		model.addAttribute("superheroes", results);
-
+		//pasar el link de type = wiki pasar url
 		
 		return "index";
 	}
